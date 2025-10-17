@@ -1,0 +1,22 @@
+# Ignore system and temporary files
+*.class
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore build folders
+bin/
+out/
+
+# Ignore any personal or OS files
+desktop.ini
+
+# Ignore local Java config
+*.iml
+.idea/
