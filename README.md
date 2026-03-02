@@ -1,6 +1,7 @@
-Palindrome Checker App – UC4
+README – UC5: Stack-Based Palindrome Checker
 
-This is a simple Java console application that checks whether a given string is a palindrome.
-It converts the string into a character array (char[]) and uses the two-pointer technique to compare characters from both ends.
-The program runs in O(n) time complexity and avoids creating extra objects.
-Compile using javac UseCase4PalindromeCheckerApp.java and run using java UseCase4PalindromeCheckerApp.
+This is a console-based Java application that checks whether a given string is a palindrome using a Stack data structure.
+The program pushes all characters of the string onto a stack and then pops them to compare with the original sequence.
+Since Stack follows the LIFO principle, it naturally reverses the string for comparison.
+If all characters match, the string is identified as a palindrome.
+Compile using javac UseCase5PalindromeCheckerApp.java and run using java UseCase5PalindromeCheckerApp.
