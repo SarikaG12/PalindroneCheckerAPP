@@ -1,7 +1,8 @@
-README – UC9: Recursive Palindrome Checker
+README – UseCase10PalindromeCheckerApp
 
-This console-based Java application checks whether a given string is a palindrome using recursion.
-The program compares characters from the start and end of the string, moving inward recursively.
-A base condition ensures the recursion stops when all characters are matched or a mismatch is found.
-The solution demonstrates the divide-and-conquer approach using method calls on the call stack.
-It strengthens understanding of recursion, base conditions, and stack memory behavior in Java.
+This is a console-based Java application that checks whether a given string is a palindrome.
+It ignores spaces, punctuation, and letter casing during validation.
+The program first normalizes the input by removing non-alphanumeric characters and converting it to lowercase.
+It then compares characters from both ends of the string to determine if it reads the same forward and backward.
+This use case demonstrates string preprocessing, regular expressions, loops, and basic data structure concepts.
+Example input: "A man a plan a canal Panama" → Output: true.
