@@ -1,6 +1,7 @@
-README – UC12: Strategy Pattern for Palindrome Algorithms
+README – UC13: Performance Comparison
 
-This console-based Java application checks whether a given string is a palindrome using the Strategy Design Pattern.
-It defines a PalindromeStrategy interface and provides two implementations: StackStrategy and DequeStrategy.
-The algorithm is selected dynamically at runtime, demonstrating polymorphism and loose coupling.
-This use case reinforces core Java concepts including interfaces, data structures, and design patterns.
+This console-based Java application compares the performance of different palindrome checking algorithms.
+It executes both Stack-based and Deque-based strategies and measures their execution time using System.nanoTime().
+The program displays whether the input is a palindrome along with the time taken by each approach.
+This use case introduces basic benchmarking concepts and highlights algorithm comparison techniques.
+It reinforces understanding of performance measurement and strategy-based design.
