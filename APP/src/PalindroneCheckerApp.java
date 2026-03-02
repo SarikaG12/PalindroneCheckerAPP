@@ -1,62 +1,36 @@
-/**
- * =========================================================
- * MAIN CLASS - UseCase4PalindromeCheckerApp
- * =========================================================
- *
- * Use Case 4: Character Array Based Validation
- *
- * Description:
- * This class validates a palindrome by converting
- * the string into a character array and comparing
- * characters using the two-pointer technique.
- *
- * At this stage, the application:
- * - Converts string to char array
- * - Uses start and end pointers
- * - Compares characters efficiently
- * - Displays the result
- *
- * This reduces extra memory usage.
- *
- * @author Developer
- * @version 4.0
- */
+import java.util.Stack;
 
 public class PalindroneCheckerApp {
 
     /**
-     * Application entry point for UC4.
-     *
+     * Application entry point for UC5.
      * @param args Command-line arguments
      */
     public static void main(String[] args) {
 
         // Declare and initialize the input string.
-        String input = "radar";
+        String input = "noon";
 
-        // Convert the string into a character array.
-        char[] chars = input.toCharArray();
+        // Create a Stack to store characters.
+        Stack<Character> stack = new Stack<>();
 
-        // Initialize pointer at the beginning.
-        int start = 0;
-
-        // Initialize pointer at the end.
-        int end = chars.length - 1;
+        // Push each character of the string into the stack.
+        for (char c : input.toCharArray()) {
+            stack.push(c);
+        }
 
         // Assume palindrome initially.
         boolean isPalindrome = true;
 
-        // Continue comparison until pointers cross.
-        while (start < end) {
-            if (chars[start] != chars[end]) {
+        // Iterate again through original string and compare with popped characters.
+        for (char c : input.toCharArray()) {
+            if (c != stack.pop()) {
                 isPalindrome = false;
                 break;
             }
-            start++;
-            end--;
         }
 
-        // Display result
+        // Display the result.
         System.out.println("Input : " + input);
         System.out.println("Is Palindrome? : " + isPalindrome);
     }
