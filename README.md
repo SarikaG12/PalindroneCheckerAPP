@@ -1,8 +1,7 @@
-README – UseCase10PalindromeCheckerApp
+📄 README – UseCase11PalindromeCheckerApp
 
-This is a console-based Java application that checks whether a given string is a palindrome.
-It ignores spaces, punctuation, and letter casing during validation.
-The program first normalizes the input by removing non-alphanumeric characters and converting it to lowercase.
-It then compares characters from both ends of the string to determine if it reads the same forward and backward.
-This use case demonstrates string preprocessing, regular expressions, loops, and basic data structure concepts.
-Example input: "A man a plan a canal Panama" → Output: true.
+This is a console-based Java application that checks whether a given string is a palindrome using an object-oriented approach.
+The palindrome validation logic is encapsulated inside a separate PalindromeService class.
+The checkPalindrome() method compares characters from both ends using the two-pointer technique.
+Input handling is managed by the main application class, ensuring separation of concerns.
+This use case demonstrates key OOP principles such as Encapsulation and Single Responsibility Principle.
