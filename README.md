@@ -1,8 +1,7 @@
-README – UC8: Linked List Based Palindrome Checker
+README – UC9: Recursive Palindrome Checker
 
-This console-based Java application checks whether a given string is a palindrome using a Singly Linked List.
-The input string is converted into a linked list structure for processing.
-It uses the fast and slow pointer technique to locate the middle of the list efficiently.
-The second half of the list is reversed in-place without using extra memory.
-Both halves are then compared node by node to determine if the string is a palindrome.
-This implementation strengthens understanding of linked lists, traversal, and in-place reversal concepts.
+This console-based Java application checks whether a given string is a palindrome using recursion.
+The program compares characters from the start and end of the string, moving inward recursively.
+A base condition ensures the recursion stops when all characters are matched or a mismatch is found.
+The solution demonstrates the divide-and-conquer approach using method calls on the call stack.
+It strengthens understanding of recursion, base conditions, and stack memory behavior in Java.
