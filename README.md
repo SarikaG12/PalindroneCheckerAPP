@@ -1,7 +1,6 @@
-README – UC5: Stack-Based Palindrome Checker
-
-This is a console-based Java application that checks whether a given string is a palindrome using a Stack data structure.
-The program pushes all characters of the string onto a stack and then pops them to compare with the original sequence.
-Since Stack follows the LIFO principle, it naturally reverses the string for comparison.
-If all characters match, the string is identified as a palindrome.
-Compile using javac UseCase5PalindromeCheckerApp.java and run using java UseCase5PalindromeCheckerApp.
+This program checks whether a given string is a palindrome using a Queue and a Stack.
+Each character of the string is added to the queue (FIFO) and pushed onto the stack (LIFO).
+The program then removes characters from the front of the queue and the top of the stack.
+If both characters match every time, the string is a palindrome.
+If any pair does not match, it is not a palindrome.
+This demonstrates the behavioral difference between FIFO and LIFO data structures.
